@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import all_todos
+from .views import all_todos, completed_todos
 
 urlpatterns = [
-    path('', all_todos)
+    path('todos/', all_todos),
+    path('todos/completed/', completed_todos)
 ]
