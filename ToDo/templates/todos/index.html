@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+<header>
+    <h1>ToDo List</h1>
+</header>
+<div class="adding-task">
+    <label>
+        <input type="text" placeholder="New Task">
+    </label>
+    <button type="button" onclick="">Add Task</button>
+</div>
+{% block body %}
+
+{% endblock %}
+<div class="toggle-buttons">
+    <button id="completed">View completed tasks</button>
+    <button id="delete">Delete this task</button>
+</div>
+</body>
+</html>
