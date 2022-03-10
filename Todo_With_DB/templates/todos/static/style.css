@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    padding-top: 10px;
+    text-align: center;
+    height: 50px;
+    background: #343A40;
+}
+
+header h1 {
+    color: #F9C941;
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.list {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.adding-task {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.adding-task input, button {
+    padding: 7px 15px;
+    border-radius: 4px;
+    border:1px solid #FFFFFF;
+}
+
+.adding-task input {
+    width: 500px;
+    margin-right: 20px;
+    box-shadow: rgba(27, 31, 35, 0.075) 1px 2px 2px 1px inset;
+}
+
+.adding-task button {
+    color: #FFFFFF;
+    background-color: #157FFB;
+}
+
+.adding-task button:hover {
+    cursor: pointer;
+    background-color: rgb(52, 45, 56);
+}
+
+.to-do-items {
+    width: 80%;
+    border-spacing: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.to-do-items th {
+    padding: 10px 20px;
+    color: #000000;
+    border-right: 2px solid;
+    font-size: 0.9em;
+}
+
+.to-do-items th:first-child {
+    text-align: left;
+}
+
+.to-do-items th:last-child {
+    border-right: none;
+}
+
+.to-do-items td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #a6a5a5;
+}
+
+.todos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.toggle-buttons button {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.toggle-buttons button:hover {
+    cursor: pointer;
+}
+
+#completed {
+    background-color: #F9C941;
+}
+
+#delete {
+    background-color: #d7162d;
+    color: #FFFFFF;
+}
+
+#taskName {
+    color: #157FFB;
+}
+
+#taskName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#taskStatus {
+    background-color: #157FFB;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 30px;
+    height: 30px;
+}
