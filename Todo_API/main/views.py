@@ -15,7 +15,7 @@ class TodoListViewSet(
     permission_classes = (IsAuthenticated,)
 
     def get_queryset(self):
-        if self.kwargs.get('group_id'):
+        if self.kwargs.get('group_id') is not None:
             return Task.objects.filter(group_id=self.kwargs.get('group_id'))
         return Task.objects.all()
 
@@ -33,7 +33,7 @@ class TodoRetrieveViewSet(
     permission_classes = (IsAuthenticated,)
 
     def get_queryset(self):
-        if self.kwargs.get('group_id'):
+        if self.kwargs.get('group_id') is not None:
             return Task.objects.filter(group_id=self.kwargs.get('group_id'))
 
     def get_serializer_class(self):
