@@ -2,6 +2,6 @@
 
 <div align="center">
   <kbd>
-    <img src="https://waifu.now.sh/sfw/kiss" alt="">
+    <img src="https://waifu.now.sh/sfw/hug" alt="">
   </kbd>
 </div>
