@@ -49,7 +49,5 @@ class TodoRetrieveViewSet(
                 status=Task.DONE
             ),
             many=True,
-            data=self.request.data
         )
-        if serializer.is_valid(raise_exception=True):
-            return Response(serializer.data)
+        return Response(serializer.data)

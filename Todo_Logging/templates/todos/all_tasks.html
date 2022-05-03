@@ -1,0 +1,29 @@
+{% extends "todos/index.html" %}
+{% block body %}
+    <h2 class="list">Tasks in {{ group }}</h2>
+    <div class="todos">
+        <table class="to-do-items">
+            <tr>
+                <th>Task</th>
+                <th>Group</th>
+                <th>Created</th>
+                <th>Due on</th>
+                <th>Owner</th>
+                <th>Mark</th>
+            </tr>
+            {% for todo in todos %}
+                <tr>
+                    <td id="taskName">{{ todo.title }} </td>
+                    <td>{{ todo.group }}</td>
+                    <td>{{ todo.created_at }}</td>
+                    <td>{{ todo.due_date }}</td>
+                    <td>{{ todo.owner }}</td>
+                    <td id="taskStatus">{% if todo.status == 'Done' %} Done
+                    {% else %}
+                        In progress
+                    {% endif %}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
