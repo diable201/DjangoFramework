@@ -16,7 +16,7 @@ class TaskSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Task
-        fields = ('id', 'owner', 'group', 'title', 'status', 'file', 'img')
+        fields = ('id', 'owner', 'group', 'title', 'created_at', 'due_date', 'status', 'file', 'img')
 
 
 class TaskSerializerCreateUpdateRequest(serializers.ModelSerializer):
